@@ -44,7 +44,7 @@ public class BrandController {
      * @return
      */
     @RequestMapping("/add")
-    public Result add(TbBrand brand){
+    public Result add(@RequestBody TbBrand brand){
         try {
             brandService.add(brand);
             return new Result(true, "增加成功");
