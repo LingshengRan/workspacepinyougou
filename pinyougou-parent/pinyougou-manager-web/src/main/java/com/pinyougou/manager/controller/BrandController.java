@@ -76,7 +76,7 @@ public class BrandController {
      * @param id
      * @return
      */
-    @RequestMapping("findOne")
+    @RequestMapping("/findOne")
     public TbBrand findOne(Long id){
         return brandService.findOne(id);
     }
